@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolatrice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <input type="text" id="risultato" readonly placeholder="0" class="risultato" />
+      <div id="buttons">
+        <div class="content">
+          <button onclick="scriviRisultato('1')">1</button>
+          <button onclick="scriviRisultato('2')">2</button>
+          <button onclick="scriviRisultato('3')">3</button>
+          <button onclick="scriviRisultato('/')">÷</button>
+        </div>
+        <div class="content">
+          <button onclick="scriviRisultato('4')">4</button>
+          <button onclick="scriviRisultato('5')">5</button>
+          <button onclick="scriviRisultato('6')">6</button>
+          <button onclick="scriviRisultato('*')">×</button>
+        </div>
+        <div class="content">
+          <button onclick="scriviRisultato('7')">7</button>
+          <button onclick="scriviRisultato('8')">8</button>
+          <button onclick="scriviRisultato('9')">9</button>
+          <button onclick="scriviRisultato('-')">−</button>
+        </div>
+        <div class="content">
+          <button onclick="cancellaRisultato()">AC</button>
+          <button onclick="scriviRisultato('0')">0</button>
+          <button onclick="scriviRisultato('.')">.</button>
+          <button onclick="scriviRisultato('+')">+</button>
+        </div>
+        <div>
+          <button id="uguale" onclick="mostraRisultato()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
